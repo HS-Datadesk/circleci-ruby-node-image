@@ -1,8 +1,8 @@
-FROM circleci/ruby:2.3.5
+FROM circleci/ruby:2.5.0
 
 USER root
 
-ENV NODE_VERSION="8.9.4"
+ENV NODE_VERSION="10.15.3"
 ENV NODE_ZIP="node-v$NODE_VERSION-linux-x64.tar.xz"
 
 RUN wget -P downloads https://nodejs.org/dist/v$NODE_VERSION/$NODE_ZIP && \
